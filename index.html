@@ -14,14 +14,14 @@
     --sky1:#3aa6ff; --sky2:#1e7ae6; --sky3:#0a52c4;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
+  html{height:100%}
   body{font-family:'Inter',system-ui,sans-serif;color:var(--body);
     background:linear-gradient(165deg,var(--sky1) 0%,var(--sky2) 48%,var(--sky3) 100%);
-    background-attachment:fixed;min-height:100dvh;display:flex;align-items:center;justify-content:center;
+    background-attachment:fixed;min-height:100dvh;display:flex;
     padding:24px 16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   body::before{content:"";position:fixed;inset:0;pointer-events:none;
     background:radial-gradient(1100px 600px at 18% -10%, rgba(255,255,255,.45), transparent 60%)}
-  .stage{width:100%;max-width:600px;position:relative;z-index:1}
+  .stage{width:100%;max-width:600px;position:relative;z-index:1;margin:auto}
   .card{background:var(--card);border-radius:var(--radius);padding:30px 34px 24px;
     box-shadow:0 30px 70px rgba(7,38,84,.22),0 2px 8px rgba(7,38,84,.08);
     min-height:540px;display:flex;flex-direction:column}
